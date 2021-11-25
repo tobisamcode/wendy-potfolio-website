@@ -55,7 +55,8 @@
                 .gmail {
                     font-weight: 600;
                     @include respond(tablet) {
-                        font-size: 14px;
+                        font-size: 13px;
+                        margin-left: -10px;
                     }
                 }
                 .linked-img {
@@ -67,7 +68,8 @@
                 .linked {
                     font-weight: 600;
                     @include respond(tablet) {
-                        font-size: 14px;
+                        font-size: 13px;
+                        margin-left: -10px;
                     }
                 }
             }

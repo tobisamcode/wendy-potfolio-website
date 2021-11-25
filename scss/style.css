@@ -35,7 +35,7 @@ header {
 }
 
 header img {
-  width: 55px;
+  max-width: 55px;
   height: 20px;
 }
 
@@ -234,7 +234,8 @@ header .menu-btn.open .menu-btn__burger::after {
 
 @media (max-width: 768px) {
   .home .container .home-data .contact-link .gmail {
-    font-size: 14px;
+    font-size: 13px;
+    margin-left: -10px;
   }
 }
 
@@ -251,7 +252,8 @@ header .menu-btn.open .menu-btn__burger::after {
 
 @media (max-width: 768px) {
   .home .container .home-data .contact-link .linked {
-    font-size: 14px;
+    font-size: 13px;
+    margin-left: -10px;
   }
 }
 
