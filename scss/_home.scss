@@ -1,0 +1,41 @@
+.home {
+    padding: 38px 60px;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    .container {
+        display: flex;
+        align-items: center;
+        .home-data {
+            flex-basis: 1000px;
+            .hi {
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .intro {
+                font-size: 54px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .title {
+                font-size: 44px;
+                font-weight: 700;
+                color: $pink;
+            }
+            .gmail {
+                font-weight: 600;
+            }
+            .linked {
+                font-weight: 600;
+            }
+        }
+        .home-img {
+            flex-basis: 300px;
+            img {
+                margin-left: 60px;
+                margin-top: 60px;
+                max-width: 300px;
+            }
+        }
+    }
+}

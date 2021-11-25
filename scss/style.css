@@ -30,7 +30,7 @@ img {
 }
 
 header {
-  padding: 20px 40px;
+  padding: 20px 80px;
 }
 
 header img {
@@ -39,6 +39,8 @@ header img {
 }
 
 header .nav ul li {
+  font-size: 16px;
+  font-weight: 500;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -58,5 +60,62 @@ header button {
   border-radius: 20px;
   -webkit-transition: all .7s;
   transition: all .7s;
+}
+
+.home {
+  padding: 38px 60px;
+  margin-top: 10px;
+  margin-bottom: 200px;
+}
+
+.home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .container .home-data {
+  -ms-flex-preferred-size: 1000px;
+      flex-basis: 1000px;
+}
+
+.home .container .home-data .hi {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home .container .home-data .intro {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home .container .home-data .title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #FC8071;
+}
+
+.home .container .home-data .gmail {
+  font-weight: 600;
+}
+
+.home .container .home-data .linked {
+  font-weight: 600;
+}
+
+.home .container .home-img {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+}
+
+.home .container .home-img img {
+  margin-left: 60px;
+  margin-top: 60px;
+  max-width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
