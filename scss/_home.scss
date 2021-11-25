@@ -47,8 +47,10 @@
                     margin-top: -40px;
                 }
                 .gmail-img {
-                    height: 13px;
-                    width: 17px;
+                    @include respond(tablet) {
+                        height: 13px;
+                        width: 17px;
+                    }
                 }
                 .gmail {
                     font-weight: 600;
@@ -57,8 +59,10 @@
                     }
                 }
                 .linked-img {
-                    height: 13px;
-                    width: 17px;
+                    @include respond(tablet) {
+                        height: 13px;
+                        width: 17px;
+                    }
                 }
                 .linked {
                     font-weight: 600;

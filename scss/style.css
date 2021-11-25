@@ -221,9 +221,11 @@ header .menu-btn.open .menu-btn__burger::after {
   }
 }
 
-.home .container .home-data .contact-link .gmail-img {
-  height: 13px;
-  width: 17px;
+@media (max-width: 768px) {
+  .home .container .home-data .contact-link .gmail-img {
+    height: 13px;
+    width: 17px;
+  }
 }
 
 .home .container .home-data .contact-link .gmail {
@@ -236,9 +238,11 @@ header .menu-btn.open .menu-btn__burger::after {
   }
 }
 
-.home .container .home-data .contact-link .linked-img {
-  height: 13px;
-  width: 17px;
+@media (max-width: 768px) {
+  .home .container .home-data .contact-link .linked-img {
+    height: 13px;
+    width: 17px;
+  }
 }
 
 .home .container .home-data .contact-link .linked {

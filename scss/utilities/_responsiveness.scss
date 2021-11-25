@@ -1,6 +1,6 @@
 @mixin respond($breakpoint) {
     @if($breakpoint==fullscreen) {
-        @media (max-width: 1200px) {
+        @media (max-width: 800px) {
             @content
         }
     }
