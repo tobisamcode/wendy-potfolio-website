@@ -30,7 +30,8 @@ img {
 }
 
 header {
-  padding: 20px 80px;
+  padding: 20px 50px;
+  /* ANIMATION */
 }
 
 header img {
@@ -53,7 +54,7 @@ header .nav ul li:not(:last-child) {
   margin-right: 62px;
 }
 
-header button {
+header .nav ul button {
   width: 161px;
   height: 52px;
   background: #FC8071;
@@ -62,10 +63,97 @@ header button {
   transition: all .7s;
 }
 
+@media (max-width: 768px) {
+  header .nav {
+    display: none;
+  }
+}
+
+header .menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+
+header .menu-btn .menu-btn__burger {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .menu-btn .menu-btn__burger::before,
+header .menu-btn .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .menu-btn .menu-btn__burger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+  top: 31px;
+}
+
+header .menu-btn .menu-btn__burger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  top: 17px;
+}
+
+header .menu-btn.open .menu-btn__burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+header .menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
 .home {
   padding: 38px 60px;
   margin-top: 10px;
   margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-top: 50px;
+  }
 }
 
 .home .container {
@@ -88,10 +176,24 @@ header button {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .home .container .home-data .hi {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
 .home .container .home-data .intro {
   font-size: 54px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .home .container .home-data .intro {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
 }
 
 .home .container .home-data .title {
@@ -100,17 +202,64 @@ header button {
   color: #FC8071;
 }
 
-.home .container .home-data .gmail {
+@media (max-width: 768px) {
+  .home .container .home-data .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .container .home-data .emoji {
+    width: 25px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .container .home-data .contact-link {
+    margin-top: -40px;
+  }
+}
+
+.home .container .home-data .contact-link .gmail-img {
+  height: 13px;
+  width: 17px;
+}
+
+.home .container .home-data .contact-link .gmail {
   font-weight: 600;
 }
 
-.home .container .home-data .linked {
+@media (max-width: 768px) {
+  .home .container .home-data .contact-link .gmail {
+    font-size: 14px;
+  }
+}
+
+.home .container .home-data .contact-link .linked-img {
+  height: 13px;
+  width: 17px;
+}
+
+.home .container .home-data .contact-link .linked {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .home .container .home-data .contact-link .linked {
+    font-size: 14px;
+  }
 }
 
 .home .container .home-img {
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
+}
+
+@media (max-width: 768px) {
+  .home .container .home-img {
+    display: none;
+  }
 }
 
 .home .container .home-img img {

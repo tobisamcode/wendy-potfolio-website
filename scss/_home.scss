@@ -2,6 +2,9 @@
     padding: 38px 60px;
     margin-top: 10px;
     margin-bottom: 200px;
+    @include respond(tablet) {
+        margin-top: 50px;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -11,25 +14,64 @@
                 font-size: 28px;
                 font-weight: 600;
                 margin-bottom: 20px;
+                @include respond(tablet) {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
             }
             .intro {
                 font-size: 54px;
                 font-weight: 700;
                 margin-bottom: 20px;
+                @include respond(tablet) {
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                }
             }
             .title {
                 font-size: 44px;
                 font-weight: 700;
                 color: $pink;
+                @include respond(tablet) {
+                    font-size: 24px;
+                }
             }
-            .gmail {
-                font-weight: 600;
+            .emoji {
+                @include respond(tablet) {
+                    width: 25px;
+                    height: 30px;
+                }
             }
-            .linked {
-                font-weight: 600;
+            .contact-link {
+                @include respond(tablet) {
+                    margin-top: -40px;
+                }
+                .gmail-img {
+                    height: 13px;
+                    width: 17px;
+                }
+                .gmail {
+                    font-weight: 600;
+                    @include respond(tablet) {
+                        font-size: 14px;
+                    }
+                }
+                .linked-img {
+                    height: 13px;
+                    width: 17px;
+                }
+                .linked {
+                    font-weight: 600;
+                    @include respond(tablet) {
+                        font-size: 14px;
+                    }
+                }
             }
         }
         .home-img {
+            @include respond(tablet) {
+                display: none;
+            }
             flex-basis: 300px;
             img {
                 margin-left: 60px;

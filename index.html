@@ -16,7 +16,7 @@
 <body>
     <!-- header -->
     <header class="flex items-center justify-between shadow-md">
-        <a href="#"><img src="./img/W.E.png"></a>
+        <a class="mr-72" href="#"><img src="./img/W.E.png"></a>
 
         <div class="nav">
             <ul class="nav-menu flex items-center justify-center">
@@ -24,11 +24,17 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact me</a></li>
+                <button type="button" class="btn ml-40 hover:bg-pink-500">
+                    <a href="#" class="text-black">Hire me</a>
+                </button>
             </ul>
+
         </div>
-        <button type="button" class="btn hover:bg-pink-500">
-            <a href="#" class="text-black">Hire me</a>
-        </button>
+
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+
     </header>
 
 
@@ -41,15 +47,17 @@
                     <p class="intro">I’m Chinwendu Enyinnaya</p>
                     <div class="flex mb-24">
                         <p class="title mr-6">A UI/UX Designer</p>
-                        <img class="h-20 w-20" src="./img/emoji.png">
+                        <img class="emoji h-20 w-20" src="./img/emoji.png">
                     </div>
-                    <div class="flex">
-                        <img src="./img/msg.png" class="mr-12 h-10 mb-6">
-                        <a class="gmail">chiwendy1@gmail.com></a>
-                    </div>
-                    <div class="flex">
-                        <img src="./img/linkedin 1.png" class="mr-12 h-10 w-12">
-                        <a class="linked">linkedin.com/in/wendy-enyinnaya</a>
+                    <div class="contact-link">
+                        <div class="flex">
+                            <img src="./img/msg.png" class="gmail-img mr-12 h-10 mb-6">
+                            <a class="gmail">chiwendy1@gmail.com></a>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <img src="./img/linkedin 1.png" class="linked-img mr-12 h-10 w-12">
+                            <a class="linked">linkedin.com/in/wendy-enyinnaya</a>
+                        </div>
                     </div>
                 </div>
 

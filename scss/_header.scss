@@ -1,5 +1,5 @@
 header {
-    padding: 20px 80px;
+    padding: 20px 50px;
     img {
         width: 55px;
         height: 20px;
@@ -17,13 +17,67 @@ header {
             li:not(:last-child) {
                 margin-right: 62px;
             }
+            button {
+                width: 161px;
+                height: 52px;
+                background: $pink;
+                border-radius: 20px;
+                transition: all .7s;
+            }
+        }
+        @include respond(tablet) {
+            display: none;
         }
     }
-    button {
-        width: 161px;
-        height: 52px;
-        background: $pink;
-        border-radius: 20px;
-        transition: all .7s;
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+        .menu-btn__burger {
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        }
+        .menu-btn__burger::before,
+        .menu-btn__burger::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        }
+        .menu-btn__burger::before {
+            transform: translateY(-16px);
+            top: 31px;
+        }
+        .menu-btn__burger::after {
+            transform: translateY(16px);
+            top: 17px;
+        }
+    }
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
     }
 }
