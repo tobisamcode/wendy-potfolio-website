@@ -1,0 +1,27 @@
+header {
+    padding: 20px 40px;
+    img {
+        width: 55px;
+        height: 20px;
+    }
+    .nav {
+        ul {
+            li {
+                transition: all .5s;
+            }
+            li:hover {
+                color: $pink;
+            }
+            li:not(:last-child) {
+                margin-right: 62px;
+            }
+        }
+    }
+    button {
+        width: 161px;
+        height: 52px;
+        background: $pink;
+        border-radius: 20px;
+        transition: all .7s;
+    }
+}
