@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,eAAe",
+    "sources": [
+        "style.scss",
+        "utilities/_colors.scss",
+        "utilities/_responsiveness.scss",
+        "utilities/_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
