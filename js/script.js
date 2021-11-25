@@ -1,2 +1,2 @@
 const nav = document.getElementsByClassName('mav')
-con close = document.getElementsByClassName('close')
+const close = document.getElementsByClassName('close')
