@@ -30,47 +30,46 @@ img {
 }
 
 header {
-  padding: 20px 50px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px 30px;
+  opacity: 100;
   /* ANIMATION */
 }
 
-@media (max-width: 768px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+header .main-header {
+  max-width: 1024px;
+  height: 55px;
 }
 
-header img {
+header .main-header img {
   max-width: 55px;
   height: 20px;
 }
 
-header .nav ul li {
-  font-size: 16px;
+header .main-header .nav ul li {
+  font-size: 12px;
   font-weight: 500;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-header .nav ul li:hover {
+header .main-header .nav ul li:hover {
   color: #FC8071;
 }
 
-header .nav ul li:not(:last-child) {
+header .main-header .nav ul li:not(:last-child) {
   margin-right: 62px;
 }
 
-header .nav ul button {
-  width: 161px;
-  height: 52px;
+header .main-header .nav ul button {
+  width: 120px;
+  height: 42px;
+  font-size: 12px;
   background: #FC8071;
   border-radius: 20px;
   -webkit-transition: all .7s;
@@ -78,12 +77,12 @@ header .nav ul button {
 }
 
 @media (max-width: 768px) {
-  header .nav {
+  header .main-header .nav {
     display: none;
   }
 }
 
-header .menu-btn {
+header .main-header .menu-btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +101,7 @@ header .menu-btn {
   /* border: 3px solid #fff; */
 }
 
-header .menu-btn .menu-btn__burger {
+header .main-header .menu-btn .menu-btn__burger {
   width: 30px;
   height: 2px;
   background: #fff;
@@ -111,10 +110,17 @@ header .menu-btn .menu-btn__burger {
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  display: none;
 }
 
-header .menu-btn .menu-btn__burger::before,
-header .menu-btn .menu-btn__burger::after {
+@media (max-width: 768px) {
+  header .main-header .menu-btn .menu-btn__burger {
+    display: block;
+  }
+}
+
+header .main-header .menu-btn .menu-btn__burger::before,
+header .main-header .menu-btn .menu-btn__burger::after {
   content: '';
   position: absolute;
   width: 30px;
@@ -127,13 +133,13 @@ header .menu-btn .menu-btn__burger::after {
   transition: all .5s ease-in-out;
 }
 
-header .menu-btn .menu-btn__burger::before {
+header .main-header .menu-btn .menu-btn__burger::before {
   -webkit-transform: translateY(-16px);
           transform: translateY(-16px);
   top: 31px;
 }
 
-header .menu-btn .menu-btn__burger::after {
+header .main-header .menu-btn .menu-btn__burger::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
   top: 17px;
@@ -157,9 +163,12 @@ header .menu-btn.open .menu-btn__burger::after {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
+main {
+  margin-top: 150px;
+}
+
 .home {
   padding: 38px 60px;
-  margin-top: 10px;
   margin-bottom: 200px;
 }
 
