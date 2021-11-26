@@ -1,5 +1,8 @@
 main {
     margin-top: 150px;
+    @include respond(tablet) {
+        margin-top: 40px;
+    }
 }
 
 .home {
