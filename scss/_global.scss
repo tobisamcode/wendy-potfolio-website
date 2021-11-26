@@ -26,3 +26,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.bd-container {
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}

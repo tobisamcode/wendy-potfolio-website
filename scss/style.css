@@ -29,8 +29,15 @@ img {
   height: auto;
 }
 
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
 header {
-  width: 100%;
+  max-width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -40,6 +47,12 @@ header {
   opacity: 100;
   background-color: #1E2022;
   /* ANIMATION */
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 40px;
+  }
 }
 
 header .main-header {

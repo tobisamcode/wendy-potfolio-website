@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    max-width: 100%;
     position: sticky;
     top: 0;
     left: 0;
@@ -7,6 +7,9 @@ header {
     padding: 20px 30px;
     opacity: 100;
     background-color: $body-color;
+    @include respond(tablet) {
+        padding: 10px 40px;
+    }
     .main-header {
         max-width: 1024px;
         height: 55px;
