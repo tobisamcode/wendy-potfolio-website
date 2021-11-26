@@ -112,7 +112,13 @@ header .main-header .menu-btn {
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  /* border: 3px solid #fff; */
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  header .main-header .menu-btn {
+    visibility: visible;
+  }
 }
 
 header .main-header .menu-btn .menu-btn__burger {
@@ -124,13 +130,6 @@ header .main-header .menu-btn .menu-btn__burger {
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  header .main-header .menu-btn .menu-btn__burger {
-    display: block;
-  }
 }
 
 header .main-header .menu-btn .menu-btn__burger::before,
@@ -141,8 +140,6 @@ header .main-header .menu-btn .menu-btn__burger::after {
   height: 2px;
   border-radius: 5px;
   background: #fff;
-  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
