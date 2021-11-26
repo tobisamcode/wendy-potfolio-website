@@ -44,5 +44,15 @@
                     display: none;
                 }
             }
+            .nav__toggle {
+                color: $white;
+                font-weight: 600;
+                font-size: 3rem;
+                cursor: pointer;
+                display: none;
+                @include respond(tablet) {
+                    display: block;
+                }
+            }
         }
     }
