@@ -34,6 +34,20 @@ header {
   /* ANIMATION */
 }
 
+@media (max-width: 768px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 header img {
   max-width: 55px;
   height: 20px;
@@ -74,14 +88,12 @@ header .menu-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2px;
   width: 50px;
   height: 50px;
   cursor: pointer;
