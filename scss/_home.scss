@@ -1,5 +1,5 @@
 main {
-    margin-top: 150px;
+    margin-top: 80px;
     @include respond(tablet) {
         margin-top: 40px;
     }
@@ -23,6 +23,7 @@ main {
                 @include respond(tablet) {
                     font-size: 14px;
                     margin-bottom: 10px;
+                    flex-basis: 100%;
                 }
             }
             .intro {

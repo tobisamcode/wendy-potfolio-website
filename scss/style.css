@@ -178,7 +178,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 @media (max-width: 768px) {
@@ -222,6 +222,8 @@ main {
   .home .container .home-data .hi {
     font-size: 14px;
     margin-bottom: 10px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
