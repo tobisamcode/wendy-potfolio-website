@@ -46,7 +46,6 @@ header {
   padding: 20px 30px;
   opacity: 100;
   background-color: #1E2022;
-  /* ANIMATION */
 }
 
 @media (max-width: 768px) {
@@ -94,84 +93,6 @@ header .main-header .nav ul button {
   header .main-header .nav {
     display: none;
   }
-}
-
-header .main-header .menu-btn {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  visibility: hidden;
-}
-
-@media (max-width: 768px) {
-  header .main-header .menu-btn {
-    visibility: visible;
-  }
-}
-
-header .main-header .menu-btn .menu-btn__burger {
-  width: 30px;
-  height: 2px;
-  background: #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-header .main-header .menu-btn .menu-btn__burger::before,
-header .main-header .menu-btn .menu-btn__burger::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  border-radius: 5px;
-  background: #fff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-header .main-header .menu-btn .menu-btn__burger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
-  top: 31px;
-}
-
-header .main-header .menu-btn .menu-btn__burger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-  top: 17px;
-}
-
-header .menu-btn.open .menu-btn__burger {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-header .menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-header .menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 main {
