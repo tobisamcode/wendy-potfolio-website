@@ -1,12 +1,13 @@
 main {
     margin-top: 80px;
+    padding: 38px 60px;
     @include respond(tablet) {
         margin-top: 40px;
+        margin-left: -20px;
     }
 }
 
 .home {
-    padding: 38px 60px;
     margin-bottom: 200px;
     @include respond(tablet) {
         margin-top: 50px;

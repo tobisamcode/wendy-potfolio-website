@@ -97,16 +97,17 @@ header .main-header .nav ul button {
 
 main {
   margin-top: 80px;
+  padding: 38px 60px;
 }
 
 @media (max-width: 768px) {
   main {
     margin-top: 40px;
+    margin-left: -20px;
   }
 }
 
 .home {
-  padding: 38px 60px;
   margin-bottom: 200px;
 }
 
