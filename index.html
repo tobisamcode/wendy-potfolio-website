@@ -18,15 +18,18 @@
 <body>
     <!-- header -->
     <header class="flex justify-center shadow-md">
-        <div class="main-header bd-container flex items-center justify-between" ">
+        <div class="nav bd-container flex items-center justify-between" ">
             <a class="mr-72 " href="# ">
                 <img src="./img/W.E.png ">
             </a>
 
-            <div class="nav ">
-                <ul class="nav-menu flex items-center justify-center ">
-                    <li><a href="# ">Home</a></li>
-                    <li><a href="# ">About</a></li>
+            <div class="nav-menu ">
+                <ul class="nav-list flex items-center justify-center ">
+                    <li class="flex items-center justify-between ">
+                        <i class='bx bx-moon change-theme' id="theme-button "></i>
+                    </li>   
+                    <li class="nav-item " ><a href="# ">Home</a></li>
+                    <li ><a href="#about ">About</a></li>
                     <li><a href="# ">Portfolio</a></li>
                     <li><a href="# ">Contact me</a></li>
                     <button  class="btn hover:bg-pink-500 ">
@@ -40,7 +43,8 @@
 
 
     <main>
-        <!-- home -->
+
+        <!--=================================================== HOME ================================================= -->
         <section class="home " id="home ">
             <div class="container ">
                 <div class="home-data ">
@@ -67,6 +71,23 @@
             <img src="./img/laptop.png" alt="">
         </div>
         </div>
+        </section>
+
+        <!--=================================================== ABOUT ================================================= -->
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <div class="small">
+                        <img class="big" src="./img/wendy.png" alt="">
+                    </div>
+                </div>
+                <div class="about-data">
+                    <h1 class="about-title mb-20">About me</h1>
+                    <p class="about-para mb-20  ">Chinwendu is a UI/UX designer passionate about designing usuable products that directly impact its users. She builds digital products (both web and mobile) . </p>
+                    <p class="about-para">My area of specialization are User Experience Design, Visual design, Product design.</p>
+                </div>
+
+            </div>
         </section>
 
         </main>
