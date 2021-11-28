@@ -1,79 +1,91 @@
-    header {
-        width: 100%;
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        background-color: $body-color;
+.bd-container {
+    margin: auto;
+    max-width: 100%;
+    @include respond(tablet) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $body-color;
+    .nav {
+        max-width: 1024px;
+        height: 80px;
         @include respond(tablet) {
-            padding: 10px 40px;
+            .nav {
+                max-width: 1024px;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
-        .nav {
-            max-width: 1024px;
-            height: 55px;
-            @include respond(tablet) {
-                max-width: 778px;
-            }
-            img {
-                max-width: 55px;
-                height: 20px;
-                @include respond(tablet) {}
-            }
-            .nav-menu {
-                ul {
+        img {
+            // max-width: 55px;
+            height: 20px;
+            @include respond(tablet) {}
+        }
+        .nav-menu {
+            ul {
+                @include respond(tablet) {
+                    align-items: flex-start;
+                }
+                li {
+                    font-size: 17px;
+                    font-weight: 500;
+                    transition: all .5s;
                     @include respond(tablet) {
-                        align-items: flex-start;
-                    }
-                    li {
-                        font-size: 17px;
-                        font-weight: 500;
-                        transition: all .5s;
-                        @include respond(tablet) {
-                            margin-bottom: 50px;
-                            font-size: 24px;
-                        }
-                    }
-                    li:hover {
-                        color: $pink;
-                    }
-                    li:not(:last-child) {
-                        margin-right: 62px;
-                    }
-                    button {
-                        width: 120px;
-                        height: 42px;
-                        font-size: 16px;
-                        background: $pink;
-                        border-radius: 12px;
-                        transition: all .7s;
+                        margin-bottom: 50px;
+                        font-size: 24px;
                     }
                 }
-                @include respond(tablet) {
-                    position: fixed;
-                    top: -100%;
-                    right: 0;
-                    width: 50%;
-                    height: 100%;
-                    padding: 70px 30px;
-                    text-align: center;
-                    background-color: $body-color;
-                    transition: .6s;
-                    box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
-                    z-index: 45;
-                    .nav-list {
-                        flex-direction: column;
-                    }
+                li:hover {
+                    color: $pink;
+                }
+                li:not(:last-child) {
+                    margin-right: 62px;
+                }
+                button {
+                    width: 120px;
+                    height: 42px;
+                    font-size: 16px;
+                    background: $pink;
+                    border-radius: 12px;
+                    transition: all .7s;
                 }
             }
-            .nav__toggle {
-                color: $white;
-                font-weight: 600;
-                font-size: 3rem;
-                cursor: pointer;
-                display: none;
-                @include respond(tablet) {
-                    display: block;
+            @include respond(tablet) {
+                position: fixed;
+                top: -100%;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                padding: 70px 30px;
+                text-align: center;
+                background-color: $body-color;
+                transition: .6s;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+                z-index: 45;
+                .nav-list {
+                    flex-direction: column;
                 }
+            }
+        }
+        .nav__toggle {
+            color: $white;
+            font-weight: 600;
+            font-size: 3rem;
+            cursor: pointer;
+            visibility: hidden;
+            @include respond(tablet) {
+                visibility: visible;
             }
         }
     }
+}
