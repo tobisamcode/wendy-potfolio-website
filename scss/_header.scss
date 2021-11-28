@@ -1,11 +1,9 @@
     header {
-        max-width: 100%;
+        width: 100%;
         position: sticky;
         top: 0;
         left: 0;
         z-index: 100;
-        padding: 20px 30px;
-        opacity: 100;
         background-color: $body-color;
         @include respond(tablet) {
             padding: 10px 40px;
