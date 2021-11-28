@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header class="shadow-md">
+    <header id="header">
         <div class="nav bd-container flex items-center justify-between">
             <div>
                 <p class="logo">W.E</p>
@@ -25,16 +25,17 @@
 
             <div class="nav-menu ">
                 <ul class="nav-list flex items-center justify-center">
-                    <li class="flex items-center justify-between ">
-                        <i class='bx bx-moon change-theme' id="theme-button "></i>
-                    </li>
+
                     <li class="nav-item "><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="# ">Portfolio</a></li>
-                    <li><a href="# ">Contact me</a></li>
-                    <button class="btn hover:bg-pink-500">
+
+                    <button class="btn hover:bg-pink-500 mr-12">
                         <a href="#" class="text-black ">Hire me</a>
                     </button>
+                    <li class="flex items-center justify-between  ">
+                        <i class='bx bx-moon change-theme' id="theme-button "></i>
+                    </li>
                 </ul>
             </div>
             <div class="nav__toggle " id="nav-toggle "><i class='bx bx-menu'></i></div>
@@ -92,7 +93,7 @@
 
     </main>
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

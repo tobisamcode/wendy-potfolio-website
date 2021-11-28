@@ -27,6 +27,10 @@ header {
             background: -webkit-linear-gradient(rgba(248, 120, 105, 1), rgba(250, 152, 140, 0.7639), rgba(193, 26, 220, 0.92));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-right: 380px;
+            @include respond(tablet) {
+                margin-right: 0;
+            }
         }
         .nav-menu {
             ul {

@@ -32,8 +32,11 @@ img {
 .bd-container {
   max-width: 960px;
   width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+}
+
+.scroll-header {
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bd-container {
@@ -77,6 +80,13 @@ header .nav .logo {
   background: -webkit-linear-gradient(#f87869, rgba(250, 152, 140, 0.7639), rgba(193, 26, 220, 0.92));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-right: 380px;
+}
+
+@media (max-width: 768px) {
+  header .nav .logo {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {

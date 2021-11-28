@@ -30,6 +30,8 @@ img {
 .bd-container {
     max-width: 960px;
     width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
+}
+
+.scroll-header {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .1);
 }
