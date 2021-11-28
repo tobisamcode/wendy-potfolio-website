@@ -19,17 +19,11 @@ header {
         height: 80px;
         @include respond(tablet) {
             .nav {
-                max-width: 1024px;
-                height: 40px;
+                height: 25px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
-        }
-        img {
-            // max-width: 55px;
-            height: 20px;
-            @include respond(tablet) {}
         }
         .nav-menu {
             ul {
@@ -80,7 +74,7 @@ header {
         .nav__toggle {
             color: $white;
             font-weight: 600;
-            font-size: 3rem;
+            font-size: 2.5rem;
             cursor: pointer;
             visibility: hidden;
             @include respond(tablet) {
