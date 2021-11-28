@@ -11,10 +11,11 @@
             padding: 10px 40px;
         }
         .nav {
+            display: flex;
+            align-items: center;
             max-width: 1024px;
             height: 55px;
             img {
-                max-width: 55px;
                 height: 20px;
                 @include respond(tablet) {}
             }
