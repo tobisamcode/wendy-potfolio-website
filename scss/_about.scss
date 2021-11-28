@@ -3,7 +3,7 @@
     margin-bottom: 80px;
     padding: 38px 70px;
     @include respond(tablet) {
-        margin-top: -70px;
+        margin-top: -20px;
     }
     .about-container {
         display: flex;
@@ -16,18 +16,21 @@
             justify-content: center;
             margin: 0;
             padding: 0 5px;
+            gap: 250px;
         }
         .about-img {
             flex-basis: 40%;
             @include respond(tablet) {
-                // flex-basis: 0;
+                flex-basis: 0;
+                align-content: center;
+                // margin-bottom: 150px;
                 display: flex;
                 align-items: center;
                 align-self: center;
                 justify-content: center;
                 margin: auto;
-                margin-bottom: 250px;
-                margin-left: 12px;
+                // margin-bottom: 250px;
+                // margin-left: 12px;
             }
             .small {
                 position: relative;

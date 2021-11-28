@@ -1,10 +1,6 @@
 .bd-container {
     margin: auto;
     max-width: 100%;
-    @include respond(tablet) {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 }
 
 header {
@@ -24,6 +20,13 @@ header {
                 justify-content: space-between;
                 align-items: center;
             }
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: -webkit-linear-gradient(rgba(248, 120, 105, 1), rgba(250, 152, 140, 0.7639), rgba(193, 26, 220, 0.92));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .nav-menu {
             ul {
