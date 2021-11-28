@@ -59,6 +59,12 @@ header .nav {
   height: 55px;
 }
 
+@media (max-width: 768px) {
+  header .nav {
+    max-width: 778px;
+  }
+}
+
 header .nav img {
   max-width: 55px;
   height: 20px;

@@ -13,6 +13,9 @@
         .nav {
             max-width: 1024px;
             height: 55px;
+            @include respond(tablet) {
+                max-width: 778px;
+            }
             img {
                 max-width: 55px;
                 height: 20px;
