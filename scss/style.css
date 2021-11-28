@@ -304,7 +304,7 @@ main {
   display: flex;
   margin-left: -70px;
   gap: 0px;
-  padding: 20px;
+  padding: 0 5px;
 }
 
 @media (max-width: 768px) {
@@ -321,7 +321,6 @@ main {
             justify-content: center;
     margin: 0;
     padding: 0 5px;
-    margin-left: 10px;
   }
 }
 
@@ -345,6 +344,7 @@ main {
             justify-content: center;
     margin: auto;
     margin-bottom: 250px;
+    margin-left: 12px;
   }
 }
 
