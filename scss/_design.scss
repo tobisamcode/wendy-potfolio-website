@@ -1,0 +1,17 @@
+.design {
+    margin: 150px 0;
+    padding: 0 150px;
+    .design-title {
+        position: relative;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        &:after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            color: $white;
+            bottom: 0;
+        }
+    }
+}
