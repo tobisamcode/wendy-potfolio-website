@@ -68,7 +68,7 @@
                 font-size: 36px;
                 font-weight: 700;
                 width: 180px;
-                border-bottom: 3px solid $white;
+                border-bottom: 1px solid $white;
                 @include respond(tablet) {
                     font-size: 24px;
                     width: 120px;

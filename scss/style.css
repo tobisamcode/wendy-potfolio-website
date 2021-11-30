@@ -433,7 +433,7 @@ main {
   font-size: 36px;
   font-weight: 700;
   width: 180px;
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -465,17 +465,10 @@ main {
 }
 
 .design .design-title {
-  position: relative;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-}
-
-.design .design-title:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  color: #FFFFFF;
-  bottom: 0;
+  width: 330px;
+  border-bottom: 1px solid #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
