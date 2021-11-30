@@ -471,4 +471,12 @@ main {
   width: 330px;
   border-bottom: 1px solid #FFFFFF;
 }
+
+@media (max-width: 768px) {
+  .design .design-title {
+    font-size: 24px;
+    width: 220px;
+    font-weight: 600;
+  }
+}
 /*# sourceMappingURL=style.css.map */

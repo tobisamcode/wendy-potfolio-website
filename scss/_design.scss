@@ -1,11 +1,16 @@
-.design {
-    margin: 150px 0;
-    padding: 0 150px;
-    .design-title {
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        width: 330px;
-        border-bottom: 1px solid $white;
+    .design {
+        margin: 150px 0;
+        padding: 0 150px;
+        .design-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            width: 330px;
+            border-bottom: 1px solid $white;
+            @include respond(tablet) {
+                font-size: 24px;
+                width: 220px;
+                font-weight: 600;
+            }
+        }
     }
-}
