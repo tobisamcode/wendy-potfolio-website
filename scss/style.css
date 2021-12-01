@@ -531,4 +531,16 @@ main {
 .design .design-container .define {
   background: #3F1F2C;
 }
+
+.design .design-container .ideate {
+  background: #22343C;
+}
+
+.design .design-container .strategize {
+  background: #293836;
+}
+
+.design .design-container .implement {
+  background: #22343C;
+}
 /*# sourceMappingURL=style.css.map */
