@@ -65,10 +65,11 @@
                 align-items: center;
             }
             .about-title {
+                color: rgba(252, 128, 113, 0.79);
+                font-size: 36px;
+                text-decoration: underline;
                 font-size: 36px;
                 font-weight: 700;
-                width: 180px;
-                border-bottom: 1px solid $white;
                 @include respond(tablet) {
                     font-size: 24px;
                     width: 120px;
