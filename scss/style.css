@@ -522,19 +522,32 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 38px;
+  width: 189px;
+  padding: 40px 38px;
   border-radius: 20px;
   gap: 20px;
 }
 
 .design .design-container .card img {
   height: 40px;
-  width: 38px;
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .design .design-container .card img {
+    height: 40px;
+  }
 }
 
 .design .design-container .card p {
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .design .design-container .card p {
+    font-size: 18px;
+  }
 }
 
 .design .design-container .discover {
