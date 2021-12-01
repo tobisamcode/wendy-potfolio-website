@@ -7,10 +7,40 @@
             font-weight: 700;
             width: 330px;
             border-bottom: 1px solid $white;
+            margin-bottom: 100px;
             @include respond(tablet) {
                 font-size: 24px;
                 width: 220px;
                 font-weight: 600;
+            }
+        }
+        .design-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 150px;
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 38px;
+                border-radius: 20px;
+                img {
+                    height: 40px;
+                    width: 38px;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+            .discover {
+                background: #333124;
+            }
+            .define {
+                background: #3F1F2C;
             }
         }
     }

@@ -470,6 +470,7 @@ main {
   font-weight: 700;
   width: 330px;
   border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -478,5 +479,56 @@ main {
     width: 220px;
     font-weight: 600;
   }
+}
+
+.design .design-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 150px;
+}
+
+.design .design-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 38px;
+  border-radius: 20px;
+}
+
+.design .design-container .card img {
+  height: 40px;
+  width: 38px;
+}
+
+.design .design-container .card p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.design .design-container .discover {
+  background: #333124;
+}
+
+.design .design-container .define {
+  background: #3F1F2C;
 }
 /*# sourceMappingURL=style.css.map */
