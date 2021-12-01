@@ -460,24 +460,30 @@ main {
 }
 
 .design {
-  margin: 150px 0;
+  margin: 120px 0;
   padding: 0 150px;
 }
 
+@media (max-width: 768px) {
+  .design {
+    padding: 0 80px;
+    margin: 30px 0;
+  }
+}
+
 .design .design-title {
+  text-decoration: underline;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  width: 330px;
-  border-bottom: 1px solid #FFFFFF;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 768px) {
   .design .design-title {
-    font-size: 24px;
-    width: 220px;
+    font-size: 18px;
     font-weight: 600;
+    margin-bottom: 40px;
   }
 }
 
@@ -496,6 +502,12 @@ main {
   gap: 150px;
 }
 
+@media (max-width: 768px) {
+  .design .design-container {
+    gap: 50px;
+  }
+}
+
 .design .design-container .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,6 +524,7 @@ main {
           justify-content: center;
   padding: 20px 38px;
   border-radius: 20px;
+  gap: 20px;
 }
 
 .design .design-container .card img {
