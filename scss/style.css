@@ -569,4 +569,39 @@ main {
 .design .design-container .implement {
   background: #22343C;
 }
+
+.featured .title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+.featured .project-title {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured .project-title h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.featured .project-title p {
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
