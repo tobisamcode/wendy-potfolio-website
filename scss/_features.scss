@@ -1,10 +1,14 @@
 .featured {
+    margin: 200px 0;
     .title {
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         text-decoration: underline;
         margin-bottom: 50px;
+        @include respond(tablet) {
+            font-size: 24px;
+        }
     }
     .project-title {
         background: $white;
@@ -13,10 +17,16 @@
         align-items: center;
         justify-content: center;
         padding: 35px 0;
+        @include respond(tablet) {
+            padding: 20px 0;
+        }
         h2 {
             color: black;
             font-weight: bold;
             font-size: 48px;
+            @include respond(tablet) {
+                font-size: 36px;
+            }
         }
         p {
             color: #565757;
@@ -24,6 +34,10 @@
             width: 437px;
             font-weight: 500;
             text-align: center;
+            @include respond(tablet) {
+                font-size: 16px;
+                width: 300px;
+            }
         }
     }
 }
