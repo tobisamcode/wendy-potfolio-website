@@ -8,13 +8,13 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
+/*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
-        // validate the variables exist
+        // Validate that variables exist
     if (toggle && nav) {
-        // we add the show menu class to the div tag with the nav_menu class
+        // We add the show-menu class to the div tag with the nav__menu class
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show-menu')
         })

@@ -39,6 +39,10 @@ img {
           box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
+.show-menu {
+  right: 0 !important;
+}
+
 .bd-container {
   margin: auto;
   max-width: 100%;
@@ -90,14 +94,14 @@ header .nav .logo {
 }
 
 @media (max-width: 768px) {
-  header .nav .nav-menu ul {
+  header .nav .nav__menu ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
 }
 
-header .nav .nav-menu ul li {
+header .nav .nav__menu ul li {
   font-size: 17px;
   font-weight: 500;
   -webkit-transition: all .5s;
@@ -105,21 +109,21 @@ header .nav .nav-menu ul li {
 }
 
 @media (max-width: 768px) {
-  header .nav .nav-menu ul li {
+  header .nav .nav__menu ul li {
     margin-bottom: 50px;
     font-size: 24px;
   }
 }
 
-header .nav .nav-menu ul li:hover {
+header .nav .nav__menu ul li:hover {
   color: #FC8071;
 }
 
-header .nav .nav-menu ul li:not(:last-child) {
+header .nav .nav__menu ul li:not(:last-child) {
   margin-right: 62px;
 }
 
-header .nav .nav-menu ul button {
+header .nav .nav__menu ul button {
   width: 120px;
   height: 42px;
   font-size: 16px;
@@ -130,22 +134,27 @@ header .nav .nav-menu ul button {
 }
 
 @media (max-width: 768px) {
-  header .nav .nav-menu {
+  header .nav .nav__menu ul button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .nav .nav__menu {
     position: fixed;
-    top: -100%;
-    right: 0;
-    width: 50%;
+    top: 0;
+    right: -100%;
     height: 100%;
     padding: 70px 30px;
     text-align: center;
     background-color: #1E2022;
-    -webkit-transition: .6s;
-    transition: .6s;
+    -webkit-transition: .8s;
+    transition: .8s;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     z-index: 45;
   }
-  header .nav .nav-menu .nav-list {
+  header .nav .nav__menu .nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -158,12 +167,13 @@ header .nav .nav__toggle {
   font-weight: 600;
   font-size: 2.5rem;
   cursor: pointer;
-  visibility: hidden;
+  display: none;
+  z-index: 1000;
 }
 
 @media (max-width: 768px) {
   header .nav .nav__toggle {
-    visibility: visible;
+    display: block;
   }
 }
 
